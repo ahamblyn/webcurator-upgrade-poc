@@ -1,9 +1,9 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<jsp:directive.page import="org.apache.logging.log4j.Logger"/>
-<jsp:directive.page import="org.apache.logging.log4j.LogManager"/>
+<jsp:directive.page import="org.apache.commons.logging.Log"/>
+<jsp:directive.page import="org.apache.commons.logging.LogFactory"/>
 <%@taglib prefix = "c" uri="http://java.sun.com/jsp/jstl/core"%>
 <% 
-Logger log = LogManager.getLogger("org.webcurator.errorPage");
+Log log = LogFactory.getLog("org.webcurator.errorPage");
 if (log.isErrorEnabled()) {
 	log.error("The error page detected an unexpected error: " + request.getAttribute("exception"), (Exception) request.getAttribute("exception"));
 }
