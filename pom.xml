@@ -188,7 +188,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!--<schemaDirectory>src/main/resources/schemas</schemaDirectory>-->
 					<outputDirectory>src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 					<sources>

@@ -22,7 +22,7 @@ public class HarvestAgentEndpoint {
         HarvestAgentStatusResponse harvestAgentStatusResponse = new HarvestAgentStatusResponse();
         HarvestAgentStatus harvestAgentStatus = new HarvestAgentStatus();
         harvestAgentStatus.setJobNumber(request.getJobNumber());
-        harvestAgentStatus.setStatus(0);
+        harvestAgentStatus.setStatus(1);
         harvestAgentStatus.setMessage("Job " + request.getJobNumber() + " successful");
         harvestAgentStatusResponse.setHarvestAgentStatus(harvestAgentStatus);
         return harvestAgentStatusResponse;
